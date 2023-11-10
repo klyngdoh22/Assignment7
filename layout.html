@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}My Website{% endblock %}</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Custom CSS -->
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-lg-4 col-md-3 col-sm-5 col-xs-5">
+        <img src="{{ url_for('static', filename='Images/IU.png') }}" alt="Logo" width="200">
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+        <h1>The Diverse Journey of Kevan Lyngdoh</h1>
+      </div>
+    </header>
+
+    <nav class="row navbar navbar-default">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="mymenu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ url_for('index') }}">Homepage</a></li>
+          <li><a href="{{ url_for('about') }}">About Me</a></li>
+          <li><a href="{{ url_for('resume') }}">Resume</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          <li><a href="{{ url_for('form_page') }}">Form Page</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block content %}
+    <!-- Content unique to each page will go here -->
+    {% endblock %}
+
+  </div>
+
+  <footer class="row">
+    <div class="container">
+        <div class="col-lg-12">
+          <p class="text-center">
+            &copy; 2023 Kevan Lyngdoh. All Rights Reserved.
+          </p>
+          <p class="text-center">
+            Follow me on
+            <a href="https://www.linkedin.com/in/kevanlyngdoh/" target="_blank">LinkedIn</a>
+          </p>
+          <p class="text-center">
+            Contact: <a href="mailto:klyngdoh@iu.edu">klyngdoh@iu.edu</a> | Phone: +1 (812)-340-1368
+          </p>
+        </div>
+      </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

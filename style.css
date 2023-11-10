@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: black;
+}
+
+header {
+  background-color: darkred;
+  color: white;
+}
+
+h1 {
+  color: white;
+  border-radius: 10px;
+  font-size: 400%;
+  margin: 0px;
+}
+
+nav {
+  background-color: lightgray;
+  color: gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a {
+  color: dimgray;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h3 {
+  color: mintcream;
+  background-color: crimson;
+  text-align: center;
+}
+
+h4 {
+  padding: 10px;
+}
+
+footer {
+  background-color: darkred;
+  color: white;
+  font-size: smaller;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+}
+
+.services {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 15px;
+  margin: 10px;
+  list-style-type: none;
+}
+
+.event_links:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.event_links {
+  text-decoration: none;
+}
+
+.log_approval {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  list-style-type: none;
+}
+
+.log_links {
+  text-decoration: none;
+}
+
+.log_links:hover {
+  color: red;
+}
+
+.event_det_list {
+  list-style-type: none;
+}
+
+.event_det_bold {
+  font-weight: bold;
+}
+
+.event_det_links {
+  border: 1px solid gray;
+  color: dimgray;
+  padding: 5px;
+  margin: 15px;
+}
+
+
+.event_app {
+  color: olive
+}
+
+.event_den {
+  color: red;
+}
+
+.button:hover {
+  background-color: darkgray;
+  color: whitesmoke;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+thead {
+  background-color: darkblue;
+  color: white;
+}
+
+table {
+  border-bottom: 5px solid darkblue;
+}
+
+form {
+  background-color: lightgray;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+textarea {
+  height: 100px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.error-message {
+  color: red;
+  display: none;
+  /* By default, error messages are hidden */
+}

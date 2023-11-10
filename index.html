@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="container">
+    <main class="row">
+      <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+        <img src="{{ url_for('static', filename='images/Porsche.jpg') }}" alt="Car Logo" width="350">
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+        <br>
+        <h2>A quick introduction about me:</h2>
+        <p>Hello there! I'm Kevan, a proud dog parent to a delightful pack including a Saint Bernard, a Tibetan Mastiff, and two captivating mixes of the two breeds.</p>
+        <p>I'm equally passionate about the thrill of cars, particularly Porsches. The 918 Spyder and the 911 GT2 RS hold a special place in my heart for their impeccable design and performance.</p>
+        <p>As for football, I bleed red with my unwavering support for Manchester United, but my love for the game extends beyond club loyalties. I cherish watching all matches, immersing myself in the spirit and strategy of the beautiful game.</p>
+      </div>
+    </main>
+  </div>
+{% endblock %}

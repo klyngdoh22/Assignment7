@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="container">
+    <main class="row">
+      <h2>Some Projects that I have Completed:</h2>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <h3>Jumpstart Websites</h3>
+        <h4>Developed these sites and have provided their links below the images:</h4>
+        <img src="{{ url_for('static', filename='images/FCRE Website.jpg') }}" alt="FCRE Website" width="100%">
+        <a href="https://klyngdoh.pages.iu.edu/FCRE3/">
+          <h4>Link: FCRE Website</h4>
+        </a>
+        <img src="{{ url_for('static', filename='images/The School Website.jpg') }}" alt="The School Website" width="100%">
+        <a href="https://theschool.kevanlyngdoh.repl.co/">
+          <h4>Link: The School Website</h4>
+        </a>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <h3>Undergraduate Degree</h3>
+        <h4>Graduated with a Bachelor's degree in Finance from the Kelley School of Business</h4>
+        <img src="{{ url_for('static', filename='images/Degree.jpg') }}" alt="Degree" width="100%">
+      </div>
+    </main>
+  </div>
+{% endblock %}
